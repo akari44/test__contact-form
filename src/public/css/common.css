@@ -1,0 +1,48 @@
+body{
+    font-family: 'Inika', serif;
+}
+
+.header{
+    background: #ffffff;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1230px;
+    height: 100px;
+    border-bottom: solid 1px #e0dfde;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header__inner-logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.header__logo-title {
+    font-size: 40px;
+    font-weight: 400;
+    color: #8b7969;
+}
+
+.header__inner-btn {
+    margin-left: auto;
+    margin-right: 20%;
+}
+
+.header__title-btn {
+    width: 100px;
+    height: 34px;
+    padding: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    background-color:rgba(240, 240, 240, 0.6);
+    color:#D9C6B5;
+    border: solid 1px #D9C6B5;
+}

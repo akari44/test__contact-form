@@ -1,0 +1,70 @@
+/* 全体の背景色 */
+body {
+    background: #F1ECE7;
+}
+
+/* ロゴ */
+.log-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.log-title {
+    margin: 60px 0;
+    font-size: 35px;
+    font-weight: 400;
+    color: #8b7969;
+}
+
+/* フォーム部分 */
+.login-wrapper {
+    background-color: #fff;
+    width: 60%;
+    margin: 30px auto;
+    padding: 60px 30px;
+    border-radius: 10px;
+    border: solid 1px #c5b9b0;
+}
+
+.login__form {
+    width: 445px;
+    margin: 0 auto 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login__form label {
+    display: block;
+    margin-left: 0px;
+    font-size: 25px;
+    color: #8b7969
+}
+
+.login__form input {
+    width: 100%;
+    height: 55px;
+    border: none;
+    background-color: #f4f4f4;
+    font-size: 14px;
+    color: #beb1a6;
+    padding: 15px;
+}
+
+/* 登録ボタン */
+.login__submit-btn {
+    display: block;
+    width: 160px;
+    height: 46px;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    line-height: 23px;
+    background-color: #82756a;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}

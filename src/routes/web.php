@@ -13,7 +13,7 @@ use App\Http\Controllers\ContactController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('/', [ContactController::class,'index']);
 Route::get('/register', [ContactController::class,'register']);
 Route::get('/login', [ContactController::class,'login']);
 Route::get('/thanks', [ContactController::class,'thanks']);

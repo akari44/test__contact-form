@@ -1,0 +1,27 @@
+/* 書体 */
+body {
+    font-family: 'Inika', serif;
+}
+
+.header {
+    background: #ffffff;
+}
+
+.header__inner {
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    border-bottom: solid 1px #e0dfde;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header__inner-logo {
+    text-align: center;
+}
+
+.header__logo-title {
+    font-size: 40px;
+    font-weight: 400;
+    color: #8b7969;
+}

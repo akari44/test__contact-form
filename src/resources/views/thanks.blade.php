@@ -16,7 +16,7 @@
 
 <body>
     <div class="background">
-        <h1 class="background-text">thank you</h1>
+        <div class="background-text">Thank you</div>
         <div class="container">
             <div class="container__message">
                 <h3 class="container__message-1">お問い合わせありがとうございました</h3>

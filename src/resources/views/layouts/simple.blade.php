@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/common.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/simple.css') }}">
     @yield('css')
 
 
@@ -26,15 +26,6 @@
                 Fashionably Late
                 </h1>
             </div>
-            
-            <div class="header__inner-btn">
-                <form action="@yield('header_btn_route', '#')" method="get">
-                    <button type="submit" class="header__title-btn"> 
-                        @yield('title_btn_text', 'Button')
-                    </button>
-                </form>
-            </div>
-
         </div>
     </header>
 

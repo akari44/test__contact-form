@@ -1,23 +1,21 @@
-/* 全体の背景色 */
+
 body {
     background: #F1ECE7;
 }
 
-/* ロゴ */
-.log-wrapper {
+.title {
     width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
-.log-title {
+.title-text {
     margin: 60px 0;
     font-size: 35px;
     font-weight: 400;
     color: #8b7969;
 }
 
-/* フォーム部分 */
 .login-wrapper {
     background-color: #fff;
     width: 60%;

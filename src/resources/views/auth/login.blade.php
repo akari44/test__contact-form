@@ -8,8 +8,8 @@
 @endsection
 
 @section('content')
-<div class="log-wrapper">
-    <h2 class="log-title">Login</h2>
+<div class="title">
+    <h2 class="title-text">Login</h2>
 </div>
 <div class="login-wrapper">
     <form class="login">

@@ -9,8 +9,8 @@
 
 
 @section('content')
-<div class="log-wrapper">
-    <h2 class="log-title">Register</h2>
+<div class="title">
+    <h2 class="title-text">Register</h2>
 </div>
 <div class="register-wrapper">
     <form class="register">

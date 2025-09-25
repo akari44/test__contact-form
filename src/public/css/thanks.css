@@ -1,68 +1,59 @@
-/* リセット */
-* {
+html,
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Inika', serif;
 }
 
-/* 背景ラッパーを画面いっぱいに */
 .background {
-    position: relative;
-    width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    /* お好みで */
-    overflow: hidden;
-    font-family: sans-serif;
+    height: 100vh;
+    background: #fff;
+    position: relative;
+
 }
 
-/* 背景文字 */
 .background-text {
     position: absolute;
+    font-size: 280px;
+    white-space: nowrap;
+    color: rgba(139, 121, 105, 0.05);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 20vw;
-    color: #000;
-    opacity: 0.05;
-    white-space: nowrap;
-    pointer-events: none;
+    z-index: 0;
+
+
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
 }
 
-/* コンテンツを中央に */
-.container {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* メッセージ */
 .container__message-1 {
-    font-size: 1.5rem;
-    color: #333;
+    position: relative;
+    font-weight: 700;
+    color: #8B7969;
+    font-size: 24px;
+    z-index: 1;
 }
 
-/* HOMEボタン */
 .container__btn-home {
     display: inline-block;
-    padding: 10px 30px;
-    background-color: #007BFF;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 400;
     color: #fff;
+    background-color: #82756A;
+    border: none;
+    text-align: center;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.container__btn-home:hover {
-    background-color: #0056b3;
+    cursor: pointer;
 }

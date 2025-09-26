@@ -1,0 +1,71 @@
+.form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.title {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title__text {
+    margin: 60px 0;
+    font-size: 35px;
+    font-weight: 400;
+    color: #8b7969;
+}
+
+
+
+.confirm__table-inner{
+    width: 100%;
+}
+.confirm__table th,
+.confirm__table td {
+    border: 1px solid #d0defd;
+    padding: 10px 30px;
+}
+
+.confirm__table th {
+    width: 30%;
+    background-color: #baa899;
+    color: #fff;
+    text-align: left;
+}
+
+.confirm__name{
+    display: flex;
+    gap: 10px;
+    
+}
+.confirm__table td {
+    background-color: #fff;
+}
+
+button{
+    border: none;
+}
+.form__buttons {
+    margin: 30px auto;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.form__button-submit {
+    background-color: #8b7969;
+    color: #fff;
+    width: 120px;
+    height: 42px;
+    padding: 10px 40px;
+}
+
+.form__button-back {
+    background-color: #fff;
+    color: #8b7969;
+    text-decoration: underline;
+    text-underline-offset: 1px;
+}

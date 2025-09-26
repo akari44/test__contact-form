@@ -10,6 +10,11 @@ class ContactController extends Controller
     {
         return view('index');
     }
+
+    public function confirm()
+    {
+        return view('confirm');
+    }
     
     public function register()
     {
@@ -19,6 +24,11 @@ class ContactController extends Controller
     public function login()
     {
         return view('auth.login');
+    }
+
+    public function admin()
+    {
+        return view('admin');
     }
 
     public function thanks()

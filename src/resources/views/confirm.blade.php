@@ -10,59 +10,71 @@
         <h2 class="title__text">Confirm</h2>
     </div>
 
-    <form class="form" action=" " method="post">
+    <form class="form" action="{{ route('contacts.store') }}" method="post">
         @csrf
         <div class="confirm__table">
             <table class="confirm__table-inner">
                 <tr>
                     <th>お名前</th>
                     <td class="confirm__name">
-                        <p>山田</p>
-                        <p>太郎</p>
-                        <input type="hidden" name="last_name" value="sample">
-                        <input type="hidden" name="first_name" value="sample">
+                        <p>{{ $contact['first_name'] }}</p>
+                        <p>{{ $contact['last_name'] }}</p>
+                        <input type="hidden" name="first_name" value="{{ $contact['first_name'] }}">
+                        <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}">
                     </td>
                 </tr>
                 <tr>
                     <th>性別</th>
                     <td>
-                        <p>sample</p>
-                        <input type="hidden" name="gender" value=" ">
+                        <p>
+                            @if($contact['gender'] == 1) 男性
+                            @elseif($contact['gender'] == 2) 女性
+                            @else その他
+                            @endif
+                        </p>
+                        <input type="hidden" name="gender" value="{{ $contact['gender'] }}">
                     </td>
                 </tr>
                 <tr>
                     <th>メールアドレス</th>
                     <td>
-                        <p>sample</p>
-                        <input type="hidden" name="email" value="">
+                        <p>{{ $contact['email'] }}</p>
+                        <input type="hidden" name="email" value="{{ $contact['email'] }}">
                     </td>
                 </tr>
                 <tr>
                     <th>電話番号</th>
                     <td>
-                        <p>sample</p>
-                        <input type="hidden" name="tel" value=" "> 
+                        <p>{{ $contact['tel'] }}</p>
+                        <input type="hidden" name="tel" value="{{ $contact['tel'] }}">
                     </td>
                 </tr>
                 <tr>
                     <th>住所</th>
                     <td>
-                        <p>sample</p>
-                        <input type="hidden" name="address" value=" ">
+                        <p>{{ $contact['address'] }}</p>
+                        <input type="hidden" name="address" value="{{ $contact['address'] }}">
                     </td>
                 </tr>
                 <tr>
                     <th>建物名</th>
                     <td>
-                        <p>sample</p>
-                        <input type="hidden" name="building" value=" ">
+                        <p>{{ $contact['building'] }}</p>
+                        <input type="hidden" name="building" value="{{ $contact['building'] }}">
+                    </td>
+                </tr>
+                 <tr>
+                    <th>お問い合わせの種類</th>
+                    <td>
+                        <p>{{ $contact['category_name'] ?? '' }}</p>
+                        <input type="hidden" name="category_id" value="{{ $contact['category_id'] }}">
                     </td>
                 </tr>
                 <tr>
                     <th>お問い合わせ内容</th>
                     <td>
-                        <p>sample</p>
-                        <input type="hidden" name="content" value=" ">
+                        <p>{{ $contact['detail'] }}</p>
+                        <input type="hidden" name="detail" value="{{ $contact['detail'] }}">
                     </td>
                 </tr>
             </table>

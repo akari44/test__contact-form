@@ -110,3 +110,18 @@ label span{
     cursor: pointer;
 
 }
+
+.form-error__wrapper {
+    display: flex;
+    justify-content: right;
+    gap: 10%;
+
+}
+
+.form-error{
+    font-size: 14px;
+    color: red;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('header_btn_route', '#')
-@section('title_btn_text', 'login')
+@section('header_btn_route', route('login.form'))
+@section('title_btn_text', 'logout')
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
@@ -34,11 +34,9 @@
                 </select>
             </div>
             <div class="select-wrapper">
-                <select class="form__date" >
-                    <option>年/月/日</option>
-                </select>
+                <input type="date" class="form__date" placeholder="年/月/日">
             </div>
-            <input class="form__date" type="date" >
+
             <button class="form__btn--search" type="submit" class="btn btn-search">
                 検索
             </button>
@@ -50,7 +48,9 @@
 
     <div class="action-bar">
         <div class="btn-export"><button class="btn-export__submit">エクスポート</button></div>
-        <div class="pagination"><!-- pagination --></div>
+        <div class="pagination"><!-- pagination -->
+            {{ $contacts->links() }}
+        </div>
     </div>
 
     <!-- 一覧テーブル -->

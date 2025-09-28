@@ -57,10 +57,16 @@
     padding-right: 2em;
 }
 
+
+.form__date::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: transparent;
+}
+
 .select-wrapper::after {
     content: '';
     position: absolute;
-    right: 5px;
+    right: 15px;
     top: 50%;
     width: 0;
     height: 0;
@@ -69,6 +75,7 @@
     border-top: 20px solid #e0dfde;
     transform: translateY(-50%);
     pointer-events: none;
+    background: #f4f4f4;
 }
 
 .form__btn--search{
@@ -95,6 +102,7 @@
     margin: 0 auto;
     width: 80%;
     margin-bottom: 30px;
+    align-items: center;
 }
 
 .btn-export__submit{
@@ -103,13 +111,41 @@
     background-color: rgba(225,219,214,0.6);
     font-size: 18px;
     color: #8b7969;
+    height: 50px;
     border: none;
 }
 
-.pagination{
-    border: solid 1px #e0dfde;
-    font-size: 18px;
+/* ページネーション全体 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* 各リンク */
+.pagination .page-link {
+    border: 1px solid #8b7969;
     color: #8b7969;
+    padding: 6px 12px;
+    margin: 0 2px;
+    text-decoration: none;
+    border-radius: 0; 
+}
+
+
+/* 現在のページ */
+.pagination .page-item.active .page-link {
+    background: #8b7969;
+    color: #fff;
+    border-color: #8b7969;
+}
+
+.page-item:last-child .page-link {
+    border-radius: 0;
+}
+
+.page-item:first-child .page-link {
+    border-radius: 0;
 }
 
 .admin-table {

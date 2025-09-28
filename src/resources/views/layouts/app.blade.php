@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}">
     <link rel="stylesheet" href="{{ asset('css/common.css') }}">
     @yield('css')
@@ -28,11 +31,9 @@
             </div>
             
             <div class="header__inner-btn">
-                <form action="@yield('header_btn_route', '#')" method="get">
-                    <button type="submit" class="header__title-btn"> 
-                        @yield('title_btn_text', 'Button')
-                    </button>
-                </form>
+                <a href="@yield('header_btn_route')" class="header__title-btn">
+                @yield('title_btn_text')
+                </a>
             </div>
 
         </div>

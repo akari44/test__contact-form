@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +15,17 @@ use App\Http\Controllers\ContactController;
 |
 */
 Route::get('/', [ContactController::class,'index']);
-Route::get('/confirm', [ContactController::class,'confirm']);
-Route::get('/register', [ContactController::class,'register']);
-Route::get('/login', [ContactController::class,'login']);
-Route::get('/thanks', [ContactController::class,'thanks']);
-Route::get('/admin', [ContactController::class,'admin']);
+
+Route::post('/confirm', [ContactController::class,'confirm']);
+Route::post('/contacts/store', [ContactController::class, 'store'])->name('contacts.store');
+
+Route::get('/thanks', [ContactController::class, 'thanks']);
+
+
+Route::get('/register', [AuthController::class, 'add']);
+Route::post('/register', [AuthController::class, 'create']);
+
+Route::get('/login', [AuthController::class, 'login'])->name('login.form');
+
+Route::get('/admin', [ContactController::class, 'admin'])
+    ->middleware('auth'); 

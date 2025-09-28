@@ -22,7 +22,7 @@
                 <h3 class="container__message-1">お問い合わせありがとうございました</h3>
             </div>
             <div class="container__btn">
-                <a href="" class="container__btn-home">HOME</a>
+                <a href="/" class="container__btn-home">HOME</a>
             </div>
         </div>
     </div>

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AuthController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,4 +29,8 @@ Route::post('/register', [AuthController::class, 'create']);
 Route::get('/login', [AuthController::class, 'login'])->name('login.form');
 
 Route::get('/admin', [ContactController::class, 'admin'])
-    ->middleware('auth'); 
+    ->middleware('auth') ->name('admin.index');
+
+Route::get('/admin/export', [ContactController::class, 'export'])->name('admin.export');
+Route::get('/admin/{id}', [ContactController::class, 'show'])->name('admin.show');
+Route::delete('/admin/{id}', [ContactController::class, 'destroy'])->name('admin.destroy');

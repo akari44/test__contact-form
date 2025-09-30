@@ -34,7 +34,7 @@
 
 ## ER図
 < - - - 作成したER図の画像 - - - >
-![ER図](contact-form.png)
+![ER図](contact-form.drawio.png)
 
 ## URL
 - 開発環境：http://localhost/
